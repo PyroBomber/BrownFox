@@ -15,6 +15,11 @@ fun main(args: Array<String>){
         }
     }
 
-    for (i in args.indices)
-        println(args[i])
+    println(args[0])
+
+    for (i in 1 until n)
+    {
+        if(args[i] != args[i-1])
+            println(args[i])
+    }
 }
