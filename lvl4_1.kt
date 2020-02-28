@@ -9,7 +9,7 @@ fun main(args: Array<String>){
             words[args[i]] = words[args[i]]?.plus(1)
         }
         else{
-            words.put(args[i], 1)
+            words[args[i]] = 1
         }
     }
 
