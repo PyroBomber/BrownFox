@@ -1,8 +1,8 @@
 fun main(args: Array<String>){
 
-    var words: MutableMap<String, Int?> = mutableMapOf(args[0] to 1)
+    var words: MutableMap<String, Int?> = mutableMapOf()
 
-    for(i in 1 until args.size){
+    for(i in args.indices){
         if(words.containsKey(args[i])){
             words[args[i]] = words[args[i]]?.plus(1)
         }
